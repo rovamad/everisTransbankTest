@@ -30,11 +30,10 @@ Importar dependiencias de Maven.
 Ejecutar el siguiente Script en MySQL server.
 
 ```sql
-DROP TABLE IF EXISTS auth_user_role;
 CREATE SCHEMA IF NOT EXISTS EverisTest;
-
 USE EverisTest;
 
+DROP TABLE IF EXISTS auth_user_role;
 DROP TABLE IF EXISTS auth_role;
 DROP TABLE IF EXISTS auth_user;
 DROP TABLE IF EXISTS sale;
