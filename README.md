@@ -100,7 +100,7 @@ Despliega formulario html para colocar credenciales de autentificación. A este 
 
 http://localhost:8080/api/sales
 
-Haciendo uso del verbo GET se obtiene un listado de las ventas del día. El recurso acepta parametrizacion para hacer filtrado de dias pasados, agregandole la key date e instanciadola con una fecha el el formato dd-MM-yyyy ejemplo: `?date=09-01-2020` quedaría algo como: http://localhost:8080/api/sales?date=09-01-2020
+Haciendo uso del verbo GET se obtiene un listado de las ventas del día. El recurso acepta parametrizacion para hacer filtrado de dias pasados, agregandole la key date e instanciadola con una fecha el el formato dd-MM-yyyy ejemplo: `?date=10-01-2020` quedaría algo como: http://localhost:8080/api/sales?date=10-01-2020
 
 Se puede acceder a este servicio tanto en Navegador como en POSTMAN. 
 
