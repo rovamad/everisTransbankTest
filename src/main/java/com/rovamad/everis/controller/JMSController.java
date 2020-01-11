@@ -27,6 +27,8 @@ import org.springframework.web.client.RestTemplate;
 @Controller
 public class JMSController {
 
+    RestTemplate restTemplate = new RestTemplate();
+
     @ResponseBody
     @GetMapping(value = "/api/jms")
     public String startJMSMock() throws Exception {
@@ -61,7 +63,6 @@ public class JMSController {
                 }};
                 HttpEntity<String> entity = new HttpEntity<>(headers);
 
-                RestTemplate restTemplate = new RestTemplate();
                 String url = "http://localhost:8080/api/sales";
                 ResponseEntity<String> response = restTemplate.exchange(
                         url,

@@ -43,7 +43,7 @@ public class SecurityConfiguration /*extends WebSecurityConfigurerAdapter*/ {
 				.and()
 				// form login
 				.formLogin()
-				.defaultSuccessUrl("/api/sales")
+				.defaultSuccessUrl("/welcome")
 				.usernameParameter("user")
 				.passwordParameter("password")
 				.and()

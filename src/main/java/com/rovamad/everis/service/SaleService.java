@@ -22,12 +22,10 @@ public class SaleService {
     public static final String DATE_DD_MM_YYYY = "dd-MM-yyyy";
 
     public List<Sale> getAllSales(LocalDate localDate) {
-
         return this.repository.findAllByDate(localDate.format(DateTimeFormatter.ofPattern(DATE_DD_MM_YYYY)));
     }
 
     public Sale createSale(Sale sale) {
-
         return this.repository.save(sale);
     }
 }
