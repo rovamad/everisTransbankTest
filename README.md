@@ -146,3 +146,6 @@ Cierra la sesion abierta por navegador.
 http://localhost:8080/api/jms
 
 Ejecuta prueba de carga con Cola JMS a diferentes consumidores.
+
+### Test Unitarios
+Para los Test Unitarios se utilizó Junit 4+, y se cubrieron aquellas clases criticas para el funcionamiento del ejercicio. Controllers, Services y Repositories. Aquellas clases autogeneradas, pojo, helpers, settings. No deben ser consideradas para la cobertura.
