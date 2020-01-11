@@ -1,5 +1,8 @@
 package com.rovamad.everis.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+@Getter @Setter
 @Table(name = "auth_user")
 public class User {
 
@@ -27,45 +31,4 @@ public class User {
 
 	@Column(name = "password")
 	private String password;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-
-	public String getEmail() {
-		return user;
-	}
-
-	public void setEmail(String email) {
-		this.user = email;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
 }

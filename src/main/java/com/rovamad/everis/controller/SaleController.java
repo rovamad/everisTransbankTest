@@ -16,7 +16,7 @@ import java.util.List;
 public class SaleController {
 
     @Autowired
-    private SaleService service;
+    SaleService service;
 
     public static final String DATE_DD_MM_YYYY = "dd-MM-yyyy";
 
@@ -36,8 +36,8 @@ public class SaleController {
     }
 
     @PostMapping(value = "/api/sales", produces = {MediaType.APPLICATION_JSON_VALUE})
-    public Sale createRepairParam(@RequestBody Sale sale) {
+    public Sale createSale(@RequestBody Sale sale) {
 
-        return this.service.createSale(sale);
+        return service.createSale(sale);
     }
 }

@@ -141,7 +141,8 @@ http://localhost:8080/logout
 
 Cierra la sesion abierta por navegador.
 
-TODO List
+### Prueba de Carga con JMS
 
-* Test Unitarios
-* Revisar implementacion de JMS solicitado en la descripción de la actividad a realizar.
+http://localhost:8080/api/jms
+
+Ejecuta prueba de carga con Cola JMS a diferentes consumidores.

@@ -17,7 +17,7 @@ public class SaleService {
 
     @Qualifier("SaleRepository")
     @Autowired
-    private SaleRepository repository;
+    SaleRepository repository;
 
     public static final String DATE_DD_MM_YYYY = "dd-MM-yyyy";
 
